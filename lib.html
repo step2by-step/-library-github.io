@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Библиотека</title>
+        <style>
+		html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:center;
+  font: 0/0 a;
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+img {
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+        img.smallscreen { display: none; }
+        @media only screen and (max-width: 320px) {
+            img { 
+                display: none; 
+            }
+            img.smallscreen { 
+                display: inline; 
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <img src="reclama3.jpg" alt="Чуковский наркоман">      
+    </body>
+</html>
+
+
+
+
+
+
